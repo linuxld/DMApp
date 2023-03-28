@@ -7,7 +7,7 @@ Author: Marcelo F. Oliveira ( moliv@kyndryl.com )
   - [Configure NIM Server](##-Configure-NIM-Server)
 
 ---
-## Infrastructure Creation
+# Infrastructure Creation
 ---
 ## Create Volume Group
 mkvg -S -s [Block Size] -y [VG Name] -f [Disk Name]
@@ -49,7 +49,7 @@ mknfsexp -d [Mount Point] -v [NFS Version] -B -S 'sys,none' -t 'rm' -h '[NIM Ser
 - `mknfsexp -d /export/repository -v 3 -B -S 'sys,none' -t 'rm' -h '$(hostname)' -c '-' -r '-,$(hostname)'`
 
 ---
-## Downloads 
+# Software Download 
 ---
 ## ISOs
 Need to post the location where to download the ISOs
