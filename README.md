@@ -6,9 +6,9 @@ Author: Marcelo F. Oliveira ( moliv@kyndryl.com )
   - [Software Download](#Software-Download)
   - [Configure NIM Server](#Configure-NIM-Server)
 
----
+
 # Infrastructure Creation
----
+
 ## Create Volume Group
 mkvg -S -s [Block Size] -y [VG Name] -f [Disk Name]
 
@@ -48,9 +48,8 @@ mknfsexp -d [Mount Point] -v [NFS Version] -B -S 'sys,none' -t 'rm' -h '[NIM Ser
 ### Recommended to create as following:
 - `mknfsexp -d /export/repository -v 3 -B -S 'sys,none' -t 'rm' -h '$(hostname)' -c '-' -r '-,$(hostname)'`
 
----
+
 # Software Download 
----
 ## ISOs
 Need to post the location where to download the ISOs
 
@@ -75,9 +74,6 @@ bffcreate -v -d [BFF Source] -t [BFF Target] [Package Name]
 ## Umount the ISO
 - `umount /mnt`
 
----
-## Configure NIM Server
----
-### Define the Ash AZ1 / AZ2 VLANs as network classes
-nim -o define -t ent -a comments="Ashburn AZ1 VLAN 113" -a net_addr=9.214.16.0 -a snm=255.255.248.0 -a routing1="default 9.214.16.1" vlan_113
-nim -o define -t ent -a comments="Ashburn AZ2 VLAN 213" -a net_addr=9.214.96.0 -a snm=255.255.248.0 -a routing1="default 9.214.96.1" vlan_213
+# Configure NIM Server
+
+
