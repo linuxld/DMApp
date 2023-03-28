@@ -4,7 +4,7 @@ Author: Marcelo F. Oliveira ( moliv@kyndryl.com )
 ### Automation Indice
   - [Infrastructure Creation](#Infrastructure-Creation)
   - [Software Download](#Software-Download)
-  - [Configure NIM Server](##-Configure-NIM-Server)
+  - [Configure NIM Server](#Configure-NIM-Server)
 
 ---
 # Infrastructure Creation
